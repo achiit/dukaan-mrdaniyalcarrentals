@@ -1,0 +1,216 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"> <title>Mr Daniyal Car Rental, Bodhan | Self-Drive & With Driver, 24/7</title> <meta name="description" content="Mr Daniyal Car Rental in Rakasipet, Bodhan. Swift Dzire, Baleno, Ertiga and Swift on rent. Self-drive Rs 12 per km, with driver Rs 12 per km plus Rs 1,000. Open 24/7."> <meta name="theme-color" content="#14264A"> <meta property="og:title" content="Mr Daniyal Car Rental, Bodhan"> <meta property="og:description" content="Clean, reliable cars. Transparent pricing. Self-drive or with driver. Open 24/7."> <meta property="og:type" content="website"> <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2314264A'/%3E%3Ctext x='32' y='43' font-size='30' text-anchor='middle' font-family='serif' fill='%23C9A24B'%3ED%3C/text%3E%3C/svg%3E"> <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet"> <style> :root{ --bg:#F7F4EE; --bg-alt:#EFEBE2; --ink:#14203A; --navy:#14264A; --navy-deep:#0D1A33; --gold:#C9A24B; --gold-soft:#E7D4A1; --silver:#C9CDD3; --line:#D9D4C7; --muted:#5B6579; --wa:#1E8E4E; --font-display:'Fraunces',Georgia,serif; --font-body:'Manrope',system-ui,sans-serif; --radius:14px; --shadow:0 10px 30px rgba(20,38,74,.10); } *{box-sizing:border-box;margin:0;padding:0} html{scroll-behavior:smooth;scroll-padding-top:84px} body{font-family:var(--font-body);background:var(--bg);color:var(--ink);line-height:1.65;font-size:16px;-webkit-font-smoothing:antialiased} img{max-width:100%;display:block} a{color:inherit;text-decoration:none} h1,h2,h3{font-family:var(--font-display);font-weight:600;line-height:1.15;letter-spacing:-.01em} .wrap{width:min(1180px,92%);margin-inline:auto} section{padding:72px 0} .eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:14px} .eyebrow svg{width:22px;height:22px} .sec-title{font-size:clamp(1.9rem,4.6vw,3rem);max-width:18ch;margin-bottom:14px} .sec-sub{color:var(--muted);max-width:56ch;margin-bottom:44px}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 24px;border-radius:999px;font-weight:700;font-size:.97rem;border:2px solid transparent;cursor:pointer;font-family:var(--font-body);transition:transform .2s,box-shadow .2s,background .2s;min-height:48px}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-wa{background:var(--wa);color:#fff;box-shadow:0 8px 20px rgba(30,142,78,.28)}
+.btn-call{background:transparent;border-color:var(--navy);color:var(--navy)}
+.btn-call:hover{background:var(--navy);color:#fff}
+.btn-gold{background:var(--gold);color:var(--navy-deep)}
+.btn-sm{padding:10px 18px;min-height:42px;font-size:.9rem}
+
+/* Header */
+header.site{position:sticky;top:0;z-index:50;background:rgba(247,244,238,.97);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;height:72px}
+.logo{display:flex;align-items:center;gap:12px}
+.logo-mark{width:42px;height:42px;border-radius:12px;background:var(--navy);display:grid;place-items:center;flex:none}
+.logo-mark svg{width:26px;height:26px}
+.logo-text{font-family:var(--font-display);font-weight:700;font-size:1.15rem;line-height:1.1;color:var(--navy)}
+.logo-text small{display:block;font-family:var(--font-body);font-size:.66rem;font-weight:600;letter-spacing:.14em;color:var(--muted);text-transform:uppercase}
+nav.main{display:none}
+nav.main a{font-weight:600;font-size:.94rem;padding:8px 4px;position:relative}
+nav.main a:hover{color:var(--gold)}
+.head-cta{display:none;gap:10px}
+.burger{width:46px;height:46px;border-radius:12px;border:1px solid var(--line);background:transparent;display:grid;place-items:center;cursor:pointer}
+.burger span,.burger span::before,.burger span::after{display:block;width:20px;height:2px;background:var(--navy);position:relative;content:””;transition:.25s}
+.burger span::before{position:absolute;top:-6px}
+.burger span::after{position:absolute;top:6px}
+.burger[aria-expanded="true"] span{background:transparent}
+.burger[aria-expanded="true"] span::before{top:0;transform:rotate(45deg)}
+.burger[aria-expanded="true"] span::after{top:0;transform:rotate(-45deg)}
+.mobile-nav{display:none;border-top:1px solid var(--line);background:var(--bg);padding:12px 4% 20px}
+.mobile-nav.open{display:block}
+.mobile-nav a.link{display:block;padding:14px 4px;font-weight:600;border-bottom:1px solid var(--line)}
+.mobile-nav .m-cta{display:flex;gap:10px;margin-top:16px}
+.mobile-nav .m-cta .btn{flex:1}
+
+/* Hero */
+.hero{padding:48px 0 72px;position:relative;overflow:hidden}
+.hero-grid{display:grid;gap:40px}
+.hero h1{font-size:clamp(2.2rem,7vw,4.2rem);color:var(--navy);margin-bottom:20px}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.proof{font-weight:600;color:var(--ink);margin-bottom:26px;max-width:46ch}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:22px}
+.micro{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:.86rem;color:var(--muted);font-weight:600}
+.micro span{display:inline-flex;align-items:center;gap:7px}
+.micro svg{width:16px;height:16px;color:var(--gold)}
+.hero-visual{position:relative}
+.hero-img{border-radius:28px 28px 120px 28px;overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/3.3;background:var(--navy)}
+.hero-img img{width:100%;height:100%;object-fit:cover}
+.hero-badge{position:absolute;left:-8px;bottom:-22px;background:var(--navy);color:#fff;border-radius:18px;padding:16px 20px;box-shadow:var(--shadow);border:1px solid var(--gold)}
+.hero-badge b{display:block;font-family:var(--font-display);font-size:1.7rem;color:var(--gold-soft);line-height:1}
+.hero-badge span{font-size:.78rem;letter-spacing:.06em}
+.road-line{position:absolute;right:-40px;top:14px;width:180px;opacity:.9;pointer-events:none}
+
+/* Trust strip */
+.trust{background:var(--navy);color:#fff;padding:36px 0}
+.trust-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:26px 16px}
+.t-item{display:flex;flex-direction:column;gap:2px;padding-left:16px;border-left:2px solid var(--gold)}
+.t-item b{font-family:var(--font-display);font-size:2rem;color:var(--gold-soft);line-height:1.1}
+.t-item span{font-size:.86rem;color:var(--silver)}
+
+/* Fleet / services */
+.cards{display:grid;gap:22px}
+.card{background:
+#FDFBF7;border:1px solid var(--line);border-radius:var(--radius);padding:26px;display:flex;flex-direction:column;gap:12px;position:relative;transition:box-shadow .25s,transform .25s}
+.card:hover{box-shadow:var(--shadow);transform:translateY(-3px)}
+.card .ic{width:50px;height:50px;border-radius:14px;background:var(--bg-alt);display:grid;place-items:center;color:var(--navy)}
+.card .ic svg{width:28px;height:28px}
+.card h3{font-size:1.3rem}
+.card p{color:var(--muted);font-size:.95rem;flex:1}
+.price-tag{font-weight:700;color:var(--navy);font-size:1.02rem}
+.price-tag small{color:var(--muted);font-weight:500}
+.card.feature{background:var(--navy);color:#fff;border-color:var(--navy)}
+.card.feature p{color:var(--silver)}
+.card.feature .ic{background:rgba(255,255,255,.1);color:var(--gold-soft)}
+.card.feature .price-tag{color:var(--gold-soft)}
+.card.feature .price-tag small{color:var(--silver)}
+.tag{position:absolute;top:18px;right:18px;font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:5px 10px;border-radius:999px;background:var(--gold);color:var(--navy-deep)}
+
+/* About */
+.about{background:var(--bg-alt)}
+.about-grid{display:grid;gap:40px}
+.avatar{width:96px;height:96px;border-radius:50%;background:var(--navy);color:var(--gold-soft);display:grid;place-items:center;font-family:var(--font-display);font-size:2.2rem;font-weight:700;border:3px solid var(--gold);margin-bottom:18px}
+.owner-name{font-weight:700;color:var(--navy)}
+.owner-role{font-size:.85rem;color:var(--muted)}
+.about p{margin-bottom:16px;max-width:60ch}
+.diff{list-style:none;display:grid;gap:12px;margin-top:8px}
+.diff li{display:flex;gap:12px;align-items:flex-start;background:
+#FDFBF7;border:1px solid var(--line);border-radius:12px;padding:14px 16px;font-weight:600;font-size:.95rem}
+.diff svg{width:22px;height:22px;flex:none;color:var(--gold);margin-top:1px}
+
+/* Gallery */
+.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.gal figure{border-radius:var(--radius);overflow:hidden;background:var(--navy);position:relative;aspect-ratio:1/1}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.gal figure:hover img{transform:scale(1.05)}
+.gal figcaption{position:absolute;left:10px;bottom:10px;background:rgba(13,26,51,.88);color:#fff;font-size:.74rem;font-weight:600;padding:5px 10px;border-radius:999px}
+.gal .wide{grid-column:span 2;aspect-ratio:16/9}
+
+/* Reviews */
+.reviews{display:grid;gap:20px}
+.rev{background:
+#FDFBF7;border:1px solid var(--line);border-radius:var(--radius);padding:24px}
+.stars{display:flex;gap:3px;margin-bottom:12px}
+.stars svg{width:18px;height:18px;fill:var(--gold)}
+.rev p{margin-bottom:16px;font-size:.98rem}
+.rev .who{font-weight:700;font-size:.92rem}
+.rev .where{color:var(--muted);font-size:.82rem}
+.rev.big{background:var(--navy);color:#fff;border-color:var(--navy)}
+.rev.big .where{color:var(--silver)}
+
+/* Pricing */
+.pricing{background:var(--bg-alt)}
+.price-grid{display:grid;gap:36px}
+.plist{border-top:2px solid var(--navy)}
+.prow{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;padding:20px 0;border-bottom:1px solid var(--line)}
+.prow h3{font-size:1.2rem;margin-bottom:4px}
+.prow p{color:var(--muted);font-size:.9rem;max-width:34ch}
+.prow .amt{font-family:var(--font-display);font-size:1.5rem;font-weight:700;color:var(--navy);white-space:nowrap;text-align:right}
+.prow .amt small{display:block;font-family:var(--font-body);font-size:.74rem;color:var(--muted);font-weight:500}
+.pnote{background:
+#FDFBF7;border:1px dashed var(--gold);border-radius:var(--radius);padding:22px}
+.pnote h3{font-size:1.15rem;margin-bottom:10px}
+.pnote ul{padding-left:18px;color:var(--muted);font-size:.93rem;display:grid;gap:6px}
+
+/* Booking form */
+.book{background:var(--navy);color:#fff}
+.book .sec-title{color:#fff}
+.book .sec-sub{color:var(--silver)}
+.book-grid{display:grid;gap:36px}
+.form{background:
+#FDFBF7;color:var(--ink);border-radius:20px;padding:26px;display:grid;gap:16px}
+.field{display:grid;gap:6px}
+.field label{font-size:.82rem;font-weight:700;color:var(--navy)}
+.field input,.field select,.field textarea{font-family:var(--font-body);font-size:1rem;padding:13px 14px;border:1.5px solid var(--line);border-radius:10px;background:#fff;color:var(--ink);width:100%;min-height:48px}
+.field input:focus,.field select:focus,.field textarea:focus{outline:2px solid var(--gold);border-color:var(--gold)}
+.row2{display:grid;gap:16px}
+.form-note{font-size:.8rem;color:var(--muted)}
+.book-side p{color:var(--silver);margin-bottom:14px}
+.book-side .big-num{font-family:var(--font-display);font-size:clamp(1.8rem,5vw,2.6rem);color:var(--gold-soft);display:block;margin:6px 0 18px}
+
+/* Contact */
+.contact-grid{display:grid;gap:30px}
+.map{border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);min-height:300px;background:var(--bg-alt)}
+.map iframe{width:100%;height:100%;min-height:340px;border:0;display:block}
+.hours{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:2px solid var(--navy);margin:18px 0 24px}
+.hours div{padding:12px 0;border-bottom:1px solid var(--line);font-size:.95rem}
+.hours div:nth-child(even){text-align:right;font-weight:700;color:var(--navy)}
+.cm{display:grid;gap:10px}
+.cm a.item{display:flex;align-items:center;gap:14px;background:
+#FDFBF7;border:1px solid var(--line);border-radius:12px;padding:14px 16px;font-weight:600}
+.cm a.item svg{width:22px;height:22px;color:var(--gold);flex:none}
+.cm a.item small{display:block;color:var(--muted);font-weight:500;font-size:.8rem}
+.cm .item.static{cursor:default}
+
+/* Footer */
+footer.site{background:var(--navy-deep);color:var(--silver);padding:64px 0 120px}
+.f-grid{display:grid;gap:36px;margin-bottom:40px}
+.f-brand h3{font-size:1.6rem;color:#fff;margin-bottom:8px}
+.f-links{display:grid;gap:8px;list-style:none}
+.f-links a:hover{color:var(--gold-soft)}
+.f-wa{background:rgba(255,255,255,.05);border:1px solid rgba(201,162,75,.4);border-radius:18px;padding:24px}
+.f-wa h4{font-family:var(--font-display);font-size:1.3rem;color:#fff;margin-bottom:8px}
+.f-wa .btn{width:100%;margin-top:12px;font-size:1.05rem;padding:16px}
+.f-bottom{border-top:1px solid rgba(255,255,255,.12);padding-top:22px;display:flex;flex-direction:column;gap:10px;font-size:.86rem}
+.built{color:var(--gold-soft);font-weight:600}
+
+/* Sticky mobile bar */
+.sticky-bar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:none;gap:10px;padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(247,244,238,.98);border-top:1px solid var(--line)}
+.sticky-bar a{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;min-height:50px;border-radius:12px;font-weight:700;font-size:1rem}
+.sticky-bar svg{width:20px;height:20px}
+.sb-call{background:var(--navy);color:#fff}
+.sb-wa{background:var(--wa);color:#fff}
+
+@media (max-width:768px){
+.sticky-bar{display:flex}
+}
+@media (min-width:521px){
+.gal{grid-template-columns:repeat(3,1fr)}
+.gal .wide{grid-column:span 2;aspect-ratio:auto}
+.gal .tall{grid-row:span 2;aspect-ratio:auto}
+.row2{grid-template-columns:1fr 1fr}
+.trust-grid{grid-template-columns:repeat(4,1fr)}
+}
+@media (min-width:821px){
+section{padding:104px 0}
+.burger,.mobile-nav{display:none!important}
+nav.main{display:flex;gap:26px}
+.head-cta{display:flex}
+.hero{padding:72px 0 110px}
+.hero-grid{grid-template-columns:1.05fr .95fr;align-items:center;gap:60px}
+.cards{grid-template-columns:repeat(6,1fr)}
+.cards .c-a{grid-column:span 3}
+.cards .c-b{grid-column:span 3}
+.cards .c-c{grid-column:span 2}
+.cards .c-d{grid-column:span 2}
+.cards .c-e{grid-column:span 2}
+.cards .c-f{grid-column:span 6;flex-direction:row;align-items:center;gap:28px}
+.about-grid{grid-template-columns:.8fr 1.2fr;gap:70px}
+.reviews{grid-template-columns:1.2fr 1fr 1fr}
+.price-grid{grid-template-columns:1.3fr .7fr;gap:60px}
+.book-grid{grid-template-columns:.8fr 1.2fr;gap:60px}
+.contact-grid{grid-template-columns:1.1fr .9fr}
+.f-grid{grid-template-columns:1.2fr .6fr 1fr;gap:60px}
+.f-bottom{flex-direction:row;justify-content:space-between}
+footer.site{padding-bottom:48px}
+}
+@media (min-width:1081px){
+.hero-badge{left:-34px}
+.about-grid{gap:100px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+
+</head> <body> <!-- SVG sprite: motif = road line + milestone marker --> <svg width="0" height="0" style="position:absolute" aria-hidden="true"> <defs> <symbol id="milestone" viewBox="0 0 24 24"><path d="M12 2l8 4v7c0 4.5-3.2 7.6-8 9-4.8-1.4-8-4.5-8-9V6l8-4z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8 12l3 3 5-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol> <symbol id="star" viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .8-5.2 4.8 1.5 7L12 17.600 5.700 21.100l1.500-7L2 9.300l7-.8z"/></symbol> <symbol id="i-call" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.500 1.500a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol> <symbol id="i-wa" viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-8.600 15.100L2 22l5-1.300A10 10 0 1012 2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8.500 8c.3-.8 1-.8 1.300-.8.300 0 .5.100.6.400l.8 1.800c.1.300 0 .5-.2.700l-.6.700c.8 1.500 1.900 2.500 3.500 3.300l.8-.9c.2-.2.400-.2.700-.1l1.800.9c.3.100.4.400.3.800-.3 1-1.300 1.600-2.300 1.500-3.200-.5-6-3.200-6.600-6.400-.1-.6 0-1.200.2-1.700z" fill="currentColor"/></symbol> <symbol id="i-car" viewBox="0 0 32 32"><path d="M4 19l2.200-7A3 3 0 019 10h14a3 3 0 012.800 2l2.200 7v5h-3v-2H7v2H4v-5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="9.500" cy="19" r="1.600" fill="currentColor"/><circle cx="22.500" cy="19" r="1.600" fill="currentColor"/><path d="M7 15h18" stroke="currentColor" stroke-width="1.800"/></symbol> <symbol id="i-wheel" viewBox="0 0 32 32"><circle cx="16" cy="16" r="11" fill="none" stroke="currentColor" stroke-width="1.800"/><circle cx="16" cy="16" r="2.500" fill="currentColor"/><path d="M16 5v8.500M16 18.500V27M5.500 12l8 2.600M18.500 17.400l8 2.600M26.500 12l-8 2.600M13.500 17.400l-8 2.600" stroke="currentColor" stroke-width="1.600"/></symbol> <symbol id="i-user" viewBox="0 0 32 32"><circle cx="16" cy="11" r="5" fill="none" stroke="currentColor" stroke-width="1.800"/><path d="M5 27c1-6 5.500-9 11-9s10 3 11 9" fill="none" stroke="currentColor" stroke-width="1.800" stroke-linecap="round"/></symbol> <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 22s7-6.500 7-12a7 7 0 10-14 0c0 5.500 7 12 7 12z" fill="none" stroke="currentColor" stroke-width="1.800"/><circle cx="12" cy="10" r="2.500" fill="currentColor"/></symbol> <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.800"/><path d="M3.500 7l8.500 6 8.500-6" fill="none" stroke="currentColor" stroke-width="1.800"/></symbol> <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.800"/><path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="1.800" stroke-linecap="round"/></symbol> </defs> </svg> <header class="site"> <div class="wrap bar"> <a href="#top" class="logo" aria-label="Mr Daniyal Car Rental home"> <span class="logo-mark"><svg viewBox="0 0 32 32" fill="none"><path d="M5 20l2.400-7.500A3 3 0 0110.300 10.400h11.400a3 3 0 012.900 2.100L27 20v4h-3v-2H8v2H5v-4z" stroke="#C9A24B" stroke-width="2" stroke-linejoin="round"/><circle cx="10" cy="19" r="1.500" fill="#C9A24B"/><circle cx="22" cy="19" r="1.500" fill="#C9A24B"/></svg></span> <span class="logo-text">Mr Daniyal<small>Car Rental · Bodhan</small></span> </a> <nav class="main" aria-label="Main"> <a href="#fleet">Fleet</a> <a href="#pricing">Pricing</a> <a href="#about">About</a> <a href="#book">Book</a> <a href="#contact">Contact</a> </nav> <div class="head-cta"> <a class="btn btn-call btn-sm" href="tel:+919989207973"><svg><use href="#i-call"/></svg>Call</a> <a class="btn btn-wa btn-sm" href="https://wa.me/919989207973?text=Hello%20Mr%20Daniyal%2C%20I%20want%20to%20rent%20a%20car.%20Please%20share%20availability." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>WhatsApp</a> </div> <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mnav"><span></span></button> </div> <div class="mobile-nav" id="mnav"> <a class="link" href="#fleet">Fleet</a> <a class="link" href="#pricing">Pricing</a> <a class="link" href="#about">About</a> <a class="link" href="#book">Book</a> <a class="link" href="#contact">Contact</a> <div class="m-cta"> <a class="btn btn-call btn-sm" href="tel:+919989207973"><svg><use href="#i-call"/></svg>Call</a> <a class="btn btn-wa btn-sm" href="https://wa.me/919989207973?text=Hello%20Mr%20Daniyal%2C%20I%20want%20to%20rent%20a%20car.%20Please%20share%20availability." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>WhatsApp</a> </div> </div> </header> <main id="top"> <!-- HERO --> <section class="hero" style="padding-bottom:72px"> <div class="wrap hero-grid"> <div> <div class="eyebrow"><svg><use href="#milestone"/></svg>Car rental in Bodhan since 10 years</div> <h1>Your journey, simplified. <em>Drive stress-free</em>, every time!</h1> <p class="proof">Clean, reliable cars with honest pricing at Rs 12 per km. Self-drive or with a driver, ready whenever you are, day or night.</p> <div class="hero-ctas"> <a class="btn btn-wa" href="https://wa.me/919989207973?text=Hello%20Mr%20Daniyal%2C%20I%20saw%20your%20website.%20I%20want%20to%20book%20a%20car.%20Please%20share%20details." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Book on WhatsApp</a> <a class="btn btn-call" href="tel:+919989207973"><svg><use href="#i-call"/></svg>Call 99892 07973</a> </div> <div class="micro"> <span><svg><use href="#milestone"/></svg>Open 24/7</span> <span><svg><use href="#milestone"/></svg>No hidden charges</span> <span><svg><use href="#milestone"/></svg>Rakasipet, Bodhan</span> </div> </div> <div class="hero-visual"> <svg class="road-line" viewBox="0 0 180 60" fill="none" aria-hidden="true"><path d="M2 50C40 50 50 10 90 10s50 40 88 40" stroke="#C9A24B" stroke-width="2" stroke-dasharray="8 8" stroke-linecap="round"/></svg> <div class="hero-img"><img src="https://i.ibb.co/1f2SyCM7/bule.jpg" alt="Mr Daniyal rental car ready for a trip from Bodhan" width="800" height="660" fetchpriority="high"></div> <div class="hero-badge"><b>Rs 12/km</b><span>Self-drive, all cars</span></div> </div> </div> </section> <!-- TRUST STRIP --> <div class="trust" aria-label="Key numbers"> <div class="wrap trust-grid"> <div class="t-item"><b>10+</b><span>Years serving Bodhan</span></div> <div class="t-item"><b>24/7</b><span>Day and night availability</span></div> <div class="t-item"><b>4</b><span>Well-kept car models</span></div> <div class="t-item"><b>Rs 12</b><span>Flat per km, no surprises</span></div> </div> </div> <!-- FLEET / SERVICES --> <section id="fleet"> <div class="wrap"> <div class="eyebrow"><svg><use href="#milestone"/></svg>Our fleet</div> <h2 class="sec-title">Cars that are neat, clean and ready</h2> <p class="sec-sub">Every car is serviced, cleaned and checked before it leaves. Pick the one that fits your family or your trip.</p> <div class="cards"> <article class="card feature c-a"> <span class="tag">Self-drive</span> <div class="ic"><svg><use href="#i-wheel"/></svg></div> <h3>Self-Drive Car Rental</h3> <p>Take the keys and drive at your own pace. Any car from our fleet, with the same clear per-km rate and no extra fees added later.</p> <div class="price-tag">Rs 12 <small>per km</small></div> <a class="btn btn-gold btn-sm" href="https://wa.me/919989207973?text=Hello%20Mr%20Daniyal%2C%20I%20want%20a%20SELF-DRIVE%20car%20at%20Rs%2012%20per%20km.%20Please%20share%20availability." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Ask on WhatsApp</a> </article> <article class="card c-b"> <span class="tag">With driver</span> <div class="ic"><svg><use href="#i-user"/></svg></div> <h3>Car Rental With Driver</h3> <p>A professional driver who knows the roads. Ideal for family functions, hospital visits, airport runs and long highway trips.</p> <div class="price-tag">Rs 12 <small>per km + Rs 1,000 driver charge</small></div> <a class="btn btn-wa btn-sm" href="https://wa.me/919989207973?text=Hello%20Mr%20Daniyal%2C%20I%20want%20a%20car%20WITH%20DRIVER%20at%20Rs%2012%20per%20km%20plus%20Rs%201%2C000%20driver%20charge.%20Please%20share%20availability." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Ask on WhatsApp</a> </article> <article class="card c-c"> <div class="ic"><svg><use href="#i-car"/></svg></div> <h3>Maruti Suzuki Swift Dzire</h3> <p>Comfortable sedan with a big boot. A good pick for couples, small families and luggage-heavy trips.</p> <div class="price-tag">Rs 12 <small>per km</small></div> <a class="btn btn-call btn-sm" href="https://wa.me/919989207973?text=Hello%20Mr%20Daniyal%2C%20is%20the%20Swift%20Dzire%20available%3F%20Please%20share%20details." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Check Dzire</a> </article> <article class="card c-d"> <div class="ic"><svg><use href="#i-car"/></svg></div> <h3>Maruti Suzuki Baleno</h3> <p>Spacious and smooth with a premium feel. Great mileage, so your per-km trips stay easy on the pocket.</p> <div class="price-tag">Rs 12 <small>per km</small></div> <a class="btn btn-call btn-sm" href="https://wa.me/919989207973?text=Hello%20Mr%20Daniyal%2C%20is%20the%20Baleno%20available%3F%20Please%20share%20details." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Check Baleno</a> </article> <article class="card c-e"> <div class="ic"><svg><use href="#i-car"/></svg></div> <h3>Maruti Suzuki Ertiga</h3> <p>Seven-seater for the whole family. Room for everyone and their bags on weddings, temple trips and picnics.</p> <div class="price-tag">Rs 12 <small>per km</small></div> <a class="btn btn-call btn-sm" href="https://wa.me/919989207973?text=Hello%20Mr%20Daniyal%2C%20is%20the%20Ertiga%20available%3F%20Please%20share%20details." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Check Ertiga</a> </article> <article class="card c-f"> <div class="ic" style="flex:none"><svg><use href="#i-car"/></svg></div> <div style="flex:1"> <h3>Maruti Suzuki Swift</h3> <p>Easy to drive and easy to park. The right choice for city errands and first-time self-drivers.</p> </div> <div class="price-tag" style="flex:none">Rs 12 <small>per km</small></div> <a class="btn btn-call btn-sm" style="flex:none" href="https://wa.me/919989207973?text=Hello%20Mr%20Daniyal%2C%20is%20the%20Swift%20available%3F%20Please%20share%20details." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Check Swift</a> </article> </div> </div> </section> <!-- ABOUT --> <section class="about" id="about"> <div class="wrap about-grid"> <div> <div class="avatar" aria-hidden="true">MI</div> <div class="owner-name">Mohammed Ismail</div> <div class="owner-role">Owner, Mr Daniyal Car Rental</div> </div> <div> <div class="eyebrow"><svg><use href="#milestone"/></svg>About us</div> <h2 class="sec-title">Ten years on the roads of Bodhan</h2> <p>I started this business with one car and a simple idea: a customer should never have to worry about the vehicle. Over ten years, people from Rakasipet, Bodhan, Nizamabad and Rudrur have trusted us for weddings, hospital trips and long drives.</p> <p>I still check every car myself before it goes out. If a car is not clean and running well, it does not leave. My business is named after my family, so every customer is treated like one of ours.</p> <ul class="diff"> <li><svg><use href="#milestone"/></svg>Well-maintained cars with strong engine performance</li> <li><svg><use href="#milestone"/></svg>Cleaned inside and out before every trip</li> <li><svg><use href="#milestone"/></svg>Self-drive or professional driver, your choice</li> <li><svg><use href="#milestone"/></svg>Rs 12 per km, told upfront with no hidden extras</li> <li><svg><use href="#milestone"/></svg>Open 24/7, including late nights and early mornings</li> </ul> </div> </div> </section> <!-- GALLERY --> <section id="gallery"> <div class="wrap"> <div class="eyebrow"><svg><use href="#milestone"/></svg>Fleet gallery</div> <h2 class="sec-title">See the cars before you book</h2> <p class="sec-sub">Real vehicles from our fleet, kept neat and comfortable.</p> <div class="gal"> <figure class="wide"><img loading="lazy" src="https://i.ibb.co/xqjBJyFt/oooo.jpg" alt="Mr Daniyal rental car front view" width="800" height="450"><figcaption>Our fleet</figcaption></figure> <figure class="tall"><img loading="lazy" src="https://i.ibb.co/d0fHqvFJ/op.jpg" alt="Rental car parked and ready" width="600" height="600"><figcaption>Clean and ready</figcaption></figure> <figure><img loading="lazy" src="https://i.ibb.co/Xxp0vbh8/uuuuuu.jpg" alt="Maruti Suzuki rental car side view" width="600" height="600"><figcaption>Maruti Suzuki</figcaption></figure> <figure><img loading="lazy" src="https://i.ibb.co/pjtz60QC/white.jpg" alt="White rental car from Mr Daniyal" width="600" height="600"><figcaption>Comfortable ride</figcaption></figure> <figure><img loading="lazy" src="https://i.ibb.co/8n9ytH05/kkkk.jpg" alt="Rental car with neat exterior" width="600" height="600"><figcaption>Well maintained</figcaption></figure> <figure class="wide"><img loading="lazy" src="https://i.ibb.co/TDSxf7qN/Whats-App-Image-2026-10-21-at-12-40-18-AM.jpg" alt="Mr Daniyal car rental vehicle" width="800" height="450"><figcaption>Ready when you are</figcaption></figure> </div> </div> </section> <!-- TESTIMONIALS --> <section style="padding-top:0"> <div class="wrap"> <div class="eyebrow"><svg><use href="#milestone"/></svg>Customer words</div> <h2 class="sec-title">What people in Bodhan say</h2> <p class="sec-sub" style="margin-bottom:34px">Shared by customers after their trips.</p> <div class="reviews"> <article class="rev big"> <div class="stars" aria-label="5 out of 5 stars"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></div> <p>Took the Ertiga with driver for my cousin's wedding in Nizamabad. Car was spotless and the driver reached before time. Rs 12 per km was what they told me and that is what I paid.</p> <div class="who">Imran Khan</div><div class="where">Rakasipet, Bodhan</div> </article> <article class="rev"> <div class="stars" aria-label="5 out of 5 stars"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></div> <p>Needed a car at 2 in the morning for a hospital visit. Called Ismail bhai and the Dzire was at my door in 20 minutes.</p> <div class="who">Srinivas Reddy</div><div class="where">Nizamabad</div> </article> <article class="rev"> <div class="stars" aria-label="5 out of 5 stars"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></div> <p>Rented the Baleno self-drive for a weekend. Engine was smooth, AC cold, no scratches or smell inside. Will book again.</p> <div class="who">Anitha K.</div><div class="where">Rudrur</div> </article> </div> </div> </section> <!-- PRICING --> <section class="pricing" id="pricing"> <div class="wrap price-grid"> <div> <div class="eyebrow"><svg><use href="#milestone"/></svg>Pricing</div> <h2 class="sec-title">Simple rates, told upfront</h2> <div class="plist"> <div class="prow"> <div><h3>Self-Drive Car Rental</h3><p>Swift, Swift Dzire, Baleno or Ertiga. You drive, you control the trip.</p></div> <div class="amt">Rs 12<small>per km</small></div> </div> <div class="prow"> <div><h3>Car Rental With Driver</h3><p>Professional driver included. Rs 12 per km plus a fixed driver charge.</p></div> <div class="amt">Rs 12<small>per km + Rs 1,000 driver</small></div> </div> </div> </div> <aside class="pnote"> <h3>Good to know</h3> <ul> <li>Same per-km rate for all four car models</li> <li>Driver charge is Rs 1,000, shown clearly before booking</li> <li>Available 24/7, call or WhatsApp any time</li> <li>Ask us about long trips and multi-day rentals</li> </ul> <a class="btn btn-wa btn-sm" style="margin-top:18px" href="https://wa.me/919989207973?text=Hello%20Mr%20Daniyal%2C%20please%20share%20the%20full%20price%20details%20for%20a%20trip." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Get exact quote</a> </aside> </div> </section> <!-- BOOKING FORM --> <section class="book" id="book"> <div class="wrap book-grid"> <div class="book-side"> <div class="eyebrow"><svg><use href="#milestone"/></svg>Booking inquiry</div> <h2 class="sec-title">Tell us your trip, we reply on WhatsApp</h2> <p>Fill this short form and it opens WhatsApp with your details ready to send. No sign-up needed.</p> <p>Prefer to talk? Call anytime:</p> <a class="big-num" href="tel:+919989207973">99892 07973</a> <a class="btn btn-gold" href="tel:+919989207973"><svg><use href="#i-call"/></svg>Call Now</a> </div> <form class="form" id="bookForm" novalidate> <div class="row2"> <div class="field"><label for="fName">Your name</label><input id="fName" name="name" type="text" autocomplete="name" placeholder="Full name" required></div> <div class="field"><label for="fPhone">Phone number</label><input id="fPhone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="10-digit mobile" required></div> </div> <div class="row2"> <div class="field"><label for="fCar">Car</label> <select id="fCar" name="car"> <option>Maruti Suzuki Swift Dzire</option> <option>Maruti Suzuki Baleno</option> <option>Maruti Suzuki Ertiga</option> <option>Maruti Suzuki Swift</option> </select> </div> <div class="field"><label for="fType">Rental type</label> <select id="fType" name="type"> <option>Self-drive (Rs 12 per km)</option> <option>With driver (Rs 12 per km + Rs 1,000)</option> </select> </div> </div> <div class="row2"> <div class="field"><label for="fDate">Pickup date</label><input id="fDate" name="date" type="date"></div> <div class="field"><label for="fPlace">Going to</label><input id="fPlace" name="place" type="text" placeholder="Destination"></div> </div> <div class="field"><label for="fNote">Anything else (optional)</label><textarea id="fNote" name="note" rows="3" placeholder="Number of people, return date, etc."></textarea></div> <button class="btn btn-wa" type="submit"><svg><use href="#i-wa"/></svg>Send Inquiry on WhatsApp</button> <p class="form-note" id="formMsg" role="status">Your details are only used to prepare the WhatsApp message.</p> </form> </div> </section> <!-- CONTACT --> <section id="contact"> <div class="wrap contact-grid"> <div> <div class="eyebrow"><svg><use href="#milestone"/></svg>Find us</div> <h2 class="sec-title">Visit us in Rakasipet, Bodhan</h2> <div class="hours"> <div>Monday to Sunday</div><div>Open 24 hours</div> <div>Public holidays</div><div>Open 24 hours</div> <div>Night bookings</div><div>Call anytime</div> </div> <div class="cm"> <a class="item" href="tel:+919989207973"><svg><use href="#i-call"/></svg><span>99892 07973<small>Tap to call</small></span></a> <a class="item" href="https://wa.me/919989207973?text=Hello%20Mr%20Daniyal%2C%20I%20have%20a%20question%20about%20car%20rental." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg><span>WhatsApp<small>Chat with Mohammed Ismail</small></span></a> <a class="item" href="mailto:chandpasha@gmail.com"><svg><use href="#i-mail"/></svg><span>chandpasha@gmail.com<small>Email us</small></span></a> <div class="item static"><svg><use href="#i-pin"/></svg><span>Rakasipet, Bodhan, Telangana<small>Serving Bodhan, Nizamabad and Rudrur</small></span></div> </div> </div> <div class="map"> <iframe title="Map to Mr Daniyal Car Rental, Rakasipet, Bodhan" src="https://maps.google.com/maps?q=Rakasipet%2C%20Bodhan%2C%20Telangana&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe> </div> </div> </section> </main> <footer class="site"> <div class="wrap"> <div class="f-grid"> <div class="f-brand"> <h3>Mr Daniyal Car Rental</h3> <p>Your journey, simplified. Reliable cars, transparent pricing, ready when you are.</p> </div> <ul class="f-links"> <li><a href="#fleet">Fleet</a></li> <li><a href="#pricing">Pricing</a></li> <li><a href="#about">About</a></li> <li><a href="#book">Book a car</a></li> <li><a href="#contact">Contact</a></li> </ul> <div class="f-wa"> <h4>Need a car right now?</h4> <p>We are open 24/7. Message us and we will reply quickly.</p> <a class="btn btn-wa" href="https://wa.me/919989207973?text=Hello%20Mr%20Daniyal%2C%20I%20need%20a%20car%20today.%20Please%20help." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Chat on WhatsApp</a> </div> </div> <div class="f-bottom"> <span>&copy; <span id="yr"></span> Mr Daniyal Car Rental, Rakasipet, Bodhan. All rights reserved.</span> <span class="built">built with ❤️ by 21.coders</span> </div> </div> </footer> <div class="sticky-bar" role="navigation" aria-label="Quick contact"> <a class="sb-call" href="tel:+919989207973"><svg><use href="#i-call"/></svg>Call</a> <a class="sb-wa" href="https://wa.me/919989207973?text=Hello%20Mr%20Daniyal%2C%20I%20want%20to%20rent%20a%20car.%20Please%20share%20availability." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>WhatsApp</a> </div> <script> (function(){ document.getElementById('yr').textContent = new Date().getFullYear(); var b = document.getElementById('burger'), m = document.getElementById('mnav'); b.addEventListener('click', function(){ var open = m.classList.toggle('open'); b.setAttribute('aria-expanded', open); }); m.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', function(){ m.classList.remove('open'); b.setAttribute('aria-expanded', 'false'); }); }); var d = document.getElementById('fDate'); if (d) d.min = new Date().toISOString().split('T')[0]; var f = document.getElementById('bookForm'), msg = document.getElementById('formMsg'); f.addEventListener('submit', function(e){ e.preventDefault(); var name = f.name.value.trim(), phone = f.phone.value.trim(); if (!name || !/^[0-9+\s-]{10,14}$/.test(phone)) { msg.textContent = 'Please enter your name and a valid 10-digit phone number.'; msg.style.color = '#B3261E'; return; } msg.style.color = ''; var t = 'Hello Mr Daniyal, I want to book a car.\n' + 'Name: ' + name + '\n' + 'Phone: ' + phone + '\n' + 'Car: ' + f.car.value + '\n' + 'Type: ' + f.type.value + '\n' + 'Pickup date: ' + (f.date.value || 'Not decided') + '\n' + 'Going to: ' + (f.place.value.trim() || 'Not decided') + '\n' + 'Note: ' + (f.note.value.trim() || 'None'); window.open('https://wa.me/919989207973?text=' + encodeURIComponent(t), '_blank', 'noopener'); msg.textContent = 'Opening WhatsApp with your details...'; }); })(); </script> </body> </html>
